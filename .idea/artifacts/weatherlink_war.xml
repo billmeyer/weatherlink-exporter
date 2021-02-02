@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="weatherlink:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>weatherlink</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="weatherlink.war">
+      <element id="artifact" artifact-name="weatherlink:war exploded" />
+    </root>
+  </artifact>
+</component>

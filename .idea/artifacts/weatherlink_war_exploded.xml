@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="weatherlink:war exploded">
+    <output-path>$PROJECT_DIR$/target/weatherlink</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>weatherlink</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="weatherlink" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.1" />
+          <element id="library" level="project" name="Maven: com.influxdb:influxdb-client-java:1.8.0" />
+          <element id="library" level="project" name="Maven: com.influxdb:influxdb-client-core:1.8.0" />
+          <element id="library" level="project" name="Maven: com.squareup.retrofit2:retrofit:2.5.0" />
+          <element id="library" level="project" name="Maven: com.squareup.okhttp3:okhttp:3.13.1" />
+          <element id="library" level="project" name="Maven: com.squareup.okhttp3:logging-interceptor:3.13.1" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-csv:1.6" />
+          <element id="library" level="project" name="Maven: org.json:json:20180813" />
+          <element id="library" level="project" name="Maven: io.reactivex.rxjava2:rxjava:2.2.17" />
+          <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.3" />
+          <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.17.3" />
+          <element id="library" level="project" name="Maven: io.swagger:swagger-annotations:1.5.22" />
+          <element id="library" level="project" name="Maven: io.gsonfire:gson-fire:1.8.0" />
+          <element id="library" level="project" name="Maven: com.squareup.retrofit2:converter-scalars:2.5.0" />
+          <element id="library" level="project" name="Maven: com.squareup.retrofit2:converter-gson:2.5.0" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/weatherlink/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="weatherlink/web/Web" />
+    </root>
+  </artifact>
+</component>

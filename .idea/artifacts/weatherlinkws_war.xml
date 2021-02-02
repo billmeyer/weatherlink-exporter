@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="weatherlinkws:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="weatherlinkws.war">
+      <element id="artifact" artifact-name="weatherlinkws:war exploded" />
+    </root>
+  </artifact>
+</component>
