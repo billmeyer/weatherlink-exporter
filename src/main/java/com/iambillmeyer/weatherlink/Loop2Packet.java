@@ -149,6 +149,6 @@ public class Loop2Packet extends BaseLoopPacket
 	
 	private int b2i(byte bl, byte bh)
 	{
-		return (bl & 0xFF) + 256 * (bh & 0xFF);
+		return (bl & 0xFF) + 256 * bh;
 	}
 }
