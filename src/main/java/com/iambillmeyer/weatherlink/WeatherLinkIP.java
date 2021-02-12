@@ -22,7 +22,7 @@ public class WeatherLinkIP
     {
         try
         {
-            fileOut = new FileOutputStream("sampledata.bin", true);
+            fileOut = new FileOutputStream("/tmp/sampledata.bin", true);
         }
         catch (FileNotFoundException e)
         {
@@ -53,16 +53,28 @@ public class WeatherLinkIP
     public void disconnect()
     throws IOException
     {
-        fileOut.flush();
+        if (fileOut != null)
+        {
+            fileOut.flush();
+        }
 
-        in.close();
-        in = null;
+        if (in != null)
+        {
+            in.close();
+            in = null;
+        }
 
-        out.close();
-        out = null;
+        if (out != null)
+        {
+            out.close();
+            out = null;
+        }
 
-        socket.close();
-        socket = null;
+        if (socket != null)
+        {
+            socket.close();
+            socket = null;
+        }
     }
 
     public boolean sendLPSCmd(Loop2Packet response)
