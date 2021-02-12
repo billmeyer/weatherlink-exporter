@@ -16,6 +16,7 @@ public class Main
         }
         catch (ParseException e)
         {
+            System.err.printf("Unknown option: %s\n", e.getMessage());
             appOptions.showUsage();
             return;
         }
